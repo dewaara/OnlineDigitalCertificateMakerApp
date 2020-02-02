@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo_iamgeview"
+        android:layout_width="135dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/newlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/emailogin_edittext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/logo_iamgeview"/>
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:ems="10"
+        android:hint="Password"
+        android:padding="16dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/emailogin_edittext"
+        app:layout_constraintStart_toStartOf="@id/emailogin_edittext"
+        app:layout_constraintTop_toTopOf="@id/emailogin_edittext"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_btn_register_button"
+        android:ems="10"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@id/password_edittext"
+        app:layout_constraintStart_toStartOf="@id/password_edittext"
+        app:layout_constraintTop_toTopOf="@id/password_edittext"/>
+
+    <Button
+        android:id="@+id/register_button2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_btn_register_button"
+        android:ems="10"
+        android:text="REGISTER"
+        app:layout_constraintEnd_toEndOf="@id/login_button"
+        app:layout_constraintStart_toStartOf="@id/login_button"
+        app:layout_constraintTop_toTopOf="@id/login_button"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

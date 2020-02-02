@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SignUpActivity">
+
+
+    <Button
+        android:id="@+id/DP"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_btn_dp"
+        android:text="SELECT PHOTO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/DP_imageview"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/DP"
+        app:layout_constraintEnd_toEndOf="@+id/DP"
+        app:layout_constraintStart_toStartOf="@+id/DP"
+        app:layout_constraintTop_toTopOf="@+id/DP" />
+
+    <EditText
+        android:id="@+id/txt_full_name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/DP"/>
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/txt_full_name"
+        app:layout_constraintStart_toStartOf="@id/txt_full_name"
+        app:layout_constraintTop_toTopOf="@id/txt_full_name"/>
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:ems="10"
+        android:hint="Email"
+        android:padding="16dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@id/txt_username"
+        app:layout_constraintStart_toStartOf="@id/txt_username"
+        app:layout_constraintTop_toTopOf="@id/txt_username"/>
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_edittext_register"
+        android:ems="10"
+        android:hint="Password"
+        android:padding="16dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/txt_email"
+        app:layout_constraintStart_toStartOf="@id/txt_email"
+        app:layout_constraintTop_toTopOf="@id/txt_email"/>
+
+
+    <RadioGroup
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toStartOf="@+id/checkbox_tc"
+        app:layout_constraintStart_toStartOf="@+id/txt_password"
+        app:layout_constraintTop_toTopOf="@+id/txt_password">
+
+
+        <TextView
+            android:id="@+id/textview_Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Gender  "
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register"
+            app:layout_constraintEnd_toStartOf="@+id/radio_male"
+            app:layout_constraintStart_toStartOf="@+id/txt_password"
+            app:layout_constraintTop_toBottomOf="@+id/txt_password" />
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Male  "
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Female  "
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txt_password"
+            app:layout_constraintStart_toEndOf="@+id/DP"
+            app:layout_constraintTop_toTopOf="@id/txt_password" />
+
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkbox_tc"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="T/C"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@id/DP"
+        app:layout_constraintTop_toTopOf="@id/txt_password" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rounded_btn_register_button"
+        android:ems="10"
+        android:text="REGISTER"
+        app:layout_constraintEnd_toEndOf="@id/txt_password"
+        app:layout_constraintStart_toStartOf="@id/txt_password"
+        app:layout_constraintTop_toTopOf="@id/txt_password" />
+
+    <TextView
+        android:id="@+id/textView_RegOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print Certificate"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@id/DP"
+        app:layout_constraintStart_toStartOf="@id/DP"
+        app:layout_constraintTop_toTopOf="@id/btn_register"/>
+
+    <ImageView
+        android:id="@+id/qrcodeImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@id/DP"
+        app:layout_constraintStart_toStartOf="@id/DP"
+        app:layout_constraintTop_toTopOf="@id/textView_RegOk" />
+
+     />
+
+
+</android.support.constraint.ConstraintLayout>
