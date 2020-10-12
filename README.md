@@ -13,7 +13,7 @@
 
 
 ==> Developer Name:- MD.HALIM\
-==> Android App Name:- OnlineDigitalCertificateMakerApp\
+==> Android App Name:- e-CertificateMakerApp\
 ==> Address :- Chatra || Jharkhand 825408 || India\
 ==> Copyright 2020 || Dewaara Inc. 03/02/2019 11:25 PM
 
@@ -24,34 +24,34 @@ Download free e-certificate templates with formal certificate borders to persona
 
 # Requirements Librarys:-
 --------------
--> Java 8\
+-> Java 8.1\
 -> Latest version of Android Studio SDK and Android Build Tools.\
 
-->  implementation fileTree(dir: 'libs', include: ['*.jar'])
-->  implementation 'com.android.support:appcompat-v7:28.0.0'
-->  implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-->  testImplementation 'junit:junit:4.12'
- -> androidTestImplementation 'com.android.support.test:runner:1.0.2'
+->  implementation fileTree(dir: 'libs', include: ['*.jar'])\
+->  implementation 'com.android.support:appcompat-v7:28.0.0'\
+->  implementation 'com.android.support.constraint:constraint-layout:1.1.3'\
+->  testImplementation 'junit:junit:4.12'\
+ -> androidTestImplementation 'com.android.support.test:runner:1.0.2'\
     
--> implementation 'com.google.firebase:firebase-database:16.0.4'
--> implementation 'com.google.firebase:firebase-core:16.0.4'
--> implementation 'com.google.firebase:firebase-auth:16.0.5'
--> implementation 'com.google.firebase:firebase-storage:16.0.4'
+-> implementation 'com.google.firebase:firebase-database:16.0.4'\
+-> implementation 'com.google.firebase:firebase-core:16.0.4'\
+-> implementation 'com.google.firebase:firebase-auth:16.0.5'\
+-> implementation 'com.google.firebase:firebase-storage:16.0.4'\
 
--> androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
--> implementation 'com.android.support:design:28.0.0'
--> implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
--> implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
--> implementation 'de.hdodenhof:circleimageview:3.0.2'
+-> androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'\
+-> implementation 'com.android.support:design:28.0.0'\
+-> implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'\
+-> implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"\
+-> implementation 'de.hdodenhof:circleimageview:3.0.2'\
 -> implementation 'com.squareup.picasso:picasso:2.71828'
 
 
 # Download APK:-
 --------------
 
-https://github.com/dewaara/GizaQuiz/blob/master/app/release/app-release.apk
+https://github.com/dewaara/OnlineDigitalCertificateMakerApp/tree/master/app/output/apk
 
-# MovieHub_DEMO:-
+# e-CertificateMakerApp:-
 --------------- 
 [![DigitalCertificate.gif](https://github.com/dewaara/OnlineDigitalCertificateMakerApp/blob/master/screenshoot/DigitalCertificate.gif)
 
